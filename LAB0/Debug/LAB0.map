@@ -1,0 +1,583 @@
+******************************************************************************
+               TMS320C6x Linker PC v8.3.2                      
+******************************************************************************
+>> Linked Tue Sep 10 11:30:07 2019
+
+OUTPUT FILE NAME:   <LAB0.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 0080aac0
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  DSPL2ROM              00700000   00100000  00000000  00100000  RWIX
+  DSPL2RAM              00800000   00040000  0000cc1a  000333e6  RWIX
+  DSPL1PRAM             00e00000   00008000  00000000  00008000  RWIX
+  DSPL1DRAM             00f00000   00008000  00000000  00008000  RWIX
+  SHDSPL2ROM            11700000   00100000  00000000  00100000  RWIX
+  SHDSPL2RAM            11800000   00040000  00000000  00040000  RWIX
+  SHDSPL1PRAM           11e00000   00008000  00000000  00008000  RWIX
+  SHDSPL1DRAM           11f00000   00008000  00000000  00008000  RWIX
+  EMIFACS0              40000000   20000000  00000000  20000000  RWIX
+  EMIFACS2              60000000   02000000  00000000  02000000  RWIX
+  EMIFACS3              62000000   02000000  00000000  02000000  RWIX
+  EMIFACS4              64000000   02000000  00000000  02000000  RWIX
+  EMIFACS5              66000000   02000000  00000000  02000000  RWIX
+  SHRAM                 80000000   00020000  00000000  00020000  RWIX
+  DDR2                  c0000000   20000000  00000000  20000000  RWIX
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00800000    00800000    0000b2c0   0000b2c0    r-x
+  00800000    00800000    0000b2c0   0000b2c0    r-x .text
+0080b2c0    0080b2c0    00001320   00000000    rw-
+  0080b2c0    0080b2c0    00000800   00000000    rw- .stack
+  0080bac0    0080bac0    00000800   00000000    rw- .sysmem
+  0080c2c0    0080c2c0    00000320   00000000    rw- .fardata
+0080c5e0    0080c5e0    000002ae   000002ae    r--
+  0080c5e0    0080c5e0    000002ae   000002ae    r-- .const
+0080c890    0080c890    00000268   00000000    rw-
+  0080c890    0080c890    00000148   00000000    rw- .far
+  0080c9d8    0080c9d8    00000120   00000000    rw- .cio
+0080caf8    0080caf8    00000128   00000128    r--
+  0080caf8    0080caf8    00000094   00000094    r-- .switch
+  0080cb90    0080cb90    00000090   00000090    r-- .cinit
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00800000    0000b2c0     
+                  00800000    00002040     rts6740_elf.lib : _printfi.c.obj (.text:__TI_printfi)
+                  00802040    00001fc0                     : _scanfi.c.obj (.text:__TI_scanfi)
+                  00804000    00000920                     : strtod.c.obj (.text:strtod)
+                  00804920    00000660                     : _printfi.c.obj (.text:_pconv_a)
+                  00804f80    000005e0                     : divd.c.obj (.text:__c6xabi_divd)
+                  00805560    000004c0                     : strtoll.c.obj (.text:strtoll)
+                  00805a20    00000440                     : strtoull.c.obj (.text:strtoull)
+                  00805e60    00000400                     : _printfi.c.obj (.text:_pconv_g)
+                  00806260    000003c0                     : memory.c.obj (.text:free)
+                  00806620    000003a0                     : strtol.c.obj (.text:strtol)
+                  008069c0    00000320                     : fputs.c.obj (.text:fputs)
+                  00806ce0    00000300                     : strtoul.c.obj (.text:strtoul)
+                  00806fe0    000002a0                     : _printfi.c.obj (.text:_pconv_e)
+                  00807280    000002a0                     : _printfi.c.obj (.text:fcvt)
+                  00807520    00000260                     : imath64.c.obj (.text:__c6xabi_divull)
+                  00807780    00000200                     : _printfi.c.obj (.text:_ltostr)
+                  00807980    000001c0                     : imath40.c.obj (.text:__c6xabi_divul)
+                  00807b40    000001c0                     : fputc.c.obj (.text:fputc)
+                  00807d00    000001c0                     : frexp.c.obj (.text:frexp)
+                  00807ec0    000001c0                     : memory.c.obj (.text:malloc)
+                  00808080    000001c0                     : s_scalbn.c.obj (.text:scalbn)
+                  00808240    000001c0                     : setvbuf.c.obj (.text:setvbuf)
+                  00808400    000001a0                     : hostrename.c.obj (.text:HOSTrename)
+                  008085a0    00000180                     : fscanf.c.obj (.text:_chkmbc)
+                  00808720    00000160                     : _bufread.c.obj (.text:__TI_buff_read)
+                  00808880    00000140                     : _scanfi.c.obj (.text:_sproc_str)
+                  008089c0    00000140                     : _scanfi.c.obj (.text:_sproc_wstr)
+                  00808b00    00000120                     : _printfi.c.obj (.text:_pconv_f)
+                  00808c20    00000120                     : fgetc.c.obj (.text:fgetc)
+                  00808d40    00000120                     : getdevice.c.obj (.text:getdevice)
+                  00808e60    00000100                     : fclose.c.obj (.text:__TI_closefile)
+                  00808f60    00000100                     : copy_decompress_rle.c.obj (.text:__TI_decompress_rle_core)
+                  00809060    00000100                     : _printfi.c.obj (.text:_mcpy)
+                  00809160    00000100                     : atoi.c.obj (.text:atoi)
+                  00809260    00000100                     : fseek.c.obj (.text:fseek)
+                  00809360    00000100                     : ungetc.c.obj (.text:ungetc)
+                  00809460    000000e0                     : hostlseek.c.obj (.text:HOSTlseek)
+                  00809540    000000e0                     : hostopen.c.obj (.text:HOSTopen)
+                  00809620    000000e0                     : hostwrite.c.obj (.text:HOSTwrite)
+                  00809700    000000e0                     : _io_perm.c.obj (.text:__TI_wrt_ok)
+                  008097e0    000000e0                     : close.c.obj (.text:close)
+                  008098c0    000000e0                     : exit.c.obj (.text:exit)
+                  008099a0    000000e0     hello.obj (.text)
+                  00809a80    000000e0     rts6740_elf.lib : ltoa.c.obj (.text:ltoa)
+                  00809b60    000000e0                     : memset.c.obj (.text:memset)
+                  00809c40    000000e0                     : printf.c.obj (.text:printf)
+                  00809d20    000000e0                     : fscanf.c.obj (.text:scanf)
+                  00809e00    000000c0                     : hostread.c.obj (.text:HOSTread)
+                  00809ec0    000000c0                     : hostunlink.c.obj (.text:HOSTunlink)
+                  00809f80    000000c0                     : dtor_list.c.obj (.text:_Z23__finalize_destructionsPP20a_needed_destructionPv)
+                  0080a040    000000c0                     : dtor_list.c.obj (.text:_ZN33_INTERNAL_11_dtor_list_c_14e673d611__TI_atexitEPFYvPvES0_S0_)
+                  0080a100    000000c0                     : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit:__TI_auto_init_nobinit_nopinit)
+                  0080a1c0    000000c0                     : fflush.c.obj (.text:__TI_doflush)
+                  0080a280    000000c0                     : divu.asm.obj (.text:__divu)
+                  0080a340    000000c0                     : memory.c.obj (.text:mremove)
+                  0080a400    000000c0                     : tls.c.obj (.text:tls:init:__TI_tls_init)
+                  0080a4c0    000000a0                     : hostclose.c.obj (.text:HOSTclose)
+                  0080a560    000000a0                     : fopen.c.obj (.text:__TI_cleanup)
+                  0080a600    000000a0                     : _io_perm.c.obj (.text:__TI_rd_ok)
+                  0080a6a0    000000a0                     : remu.asm.obj (.text:__remu)
+                  0080a740    000000a0                     : _printfi.c.obj (.text:_ecpy)
+                  0080a7e0    000000a0                     : getdevice.c.obj (.text:finddevice)
+                  0080a880    000000a0                     : memcpy64.asm.obj (.text:memcpy)
+                  0080a920    000000a0                     : memory.c.obj (.text:minsert)
+                  0080a9c0    00000080                     : trgmsg.c.obj (.text:__TI_readmsg)
+                  0080aa40    00000080                     : llshift.c.obj (.text:__c6xabi_llshl)
+                  0080aac0    00000080                     : boot.c.obj (.text:_c_int00)
+                  0080ab40    00000080                     : unlink.c.obj (.text:unlink)
+                  0080abc0    00000060                     : trgmsg.c.obj (.text:__TI_writemsg)
+                  0080ac20    00000060                     : llshift.c.obj (.text:__c6xabi_llshru)
+                  0080ac80    00000060                     : imath64.c.obj (.text:__c6xabi_remull)
+                  0080ace0    00000060                     : imath64.c.obj (.text:_subcull)
+                  0080ad40    00000060                     : lseek.c.obj (.text:lseek)
+                  0080ada0    00000060                     : memccpy.c.obj (.text:memccpy)
+                  0080ae00    00000060                     : read.c.obj (.text:read)
+                  0080ae60    00000060                     : _scanfi.c.obj (.text:strrchr)
+                  0080aec0    00000060                     : write.c.obj (.text:write)
+                  0080af20    00000040                     : frcmpyd_div.c.obj (.text:__TI_frcmpyd_div)
+                  0080af60    00000040                     : isinf.c.obj (.text:__c6xabi_isinf)
+                  0080afa0    00000040                     : _printfi.c.obj (.text:__c6xabi_isnan)
+                  0080afe0    00000040                     : args_main.c.obj (.text:_args_main)
+                  0080b020    00000040                     : fputs.c.obj (.text:puts)
+                  0080b060    00000040                     : wcslen.c.obj (.text:wcslen)
+                  0080b0a0    00000020                     : errno.c.obj (.text:__c6xabi_errno_addr)
+                  0080b0c0    00000020                     : dtor_list.c.obj (.text:__cxa_ia64_exit)
+                  0080b0e0    00000020                     : push.asm.obj (.text:__pop_rts)
+                  0080b100    00000020                     : push.asm.obj (.text:__push_rts)
+                  0080b120    00000020                     : fscanf.c.obj (.text:_inpchar)
+                  0080b140    00000020                     : _lock.c.obj (.text:_nop)
+                  0080b160    00000020                     : printf.c.obj (.text:_outc)
+                  0080b180    00000020                     : printf.c.obj (.text:_outs)
+                  0080b1a0    00000020                     : signbit.c.obj (.text:_signbit)
+                  0080b1c0    00000020                     : startup.c.obj (.text:_system_post_cinit)
+                  0080b1e0    00000020                     : pre_init.c.obj (.text:_system_pre_init)
+                  0080b200    00000020                     : fscanf.c.obj (.text:_uninpchar)
+                  0080b220    00000020                     : exit.c.obj (.text:abort)
+                  0080b240    00000020                     : dtor_list.c.obj (.text:atexit)
+                  0080b260    00000020                     : s_copysign.c.obj (.text:copysign)
+                  0080b280    00000020                     : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  0080b2a0    00000020                     : copy_decompress_rle.c.obj (.text:decompress:rle24:__TI_decompress_rle24)
+
+.stack     0    0080b2c0    00000800     UNINITIALIZED
+                  0080b2c0    00000008     rts6740_elf.lib : boot.c.obj (.stack)
+                  0080b2c8    000007f8     --HOLE--
+
+.sysmem    0    0080bac0    00000800     UNINITIALIZED
+                  0080bac0    00000008     rts6740_elf.lib : memory.c.obj (.sysmem)
+                  0080bac8    000007f8     --HOLE--
+
+.const     0    0080c5e0    000002ae     
+                  0080c5e0    00000101     rts6740_elf.lib : ctype.c.obj (.const:.string:_ctypes_)
+                  0080c6e1    00000003     --HOLE-- [fill = 0]
+                  0080c6e4    00000098     hello.obj (.const:.string)
+                  0080c77c    00000004     rts6740_elf.lib : fputs.c.obj (.const:.string)
+                  0080c780    00000080                     : strtod.c.obj (.const:digits)
+                  0080c800    00000048                     : strtod.c.obj (.const:powerof10)
+                  0080c848    00000024                     : _printfi.c.obj (.const:.string)
+                  0080c86c    00000010                     : _scanfi.c.obj (.const:.string)
+                  0080c87c    00000004     --HOLE-- [fill = 0]
+                  0080c880    00000007                     : _scanfi.c.obj (.const:.string:flit$1)
+                  0080c887    00000001     --HOLE-- [fill = 0]
+                  0080c888    00000006                     : _scanfi.c.obj (.const:.string:barr$2)
+
+.cio       0    0080c9d8    00000120     UNINITIALIZED
+                  0080c9d8    00000120     rts6740_elf.lib : trgmsg.c.obj (.cio)
+
+.far       0    0080c890    00000148     UNINITIALIZED
+                  0080c890    00000140     (.common:__TI_tmpnams)
+                  0080c9d0    00000008     (.common:parmbuf)
+
+.switch    0    0080caf8    00000094     
+                  0080caf8    0000005c     rts6740_elf.lib : _scanfi.c.obj (.switch:__TI_scanfi)
+                  0080cb54    00000038                     : _printfi.c.obj (.switch:__TI_printfi)
+
+.cinit     0    0080cb90    00000090     
+                  0080cb90    0000006d     (.cinit..fardata.load) [load image, compression = rle]
+                  0080cbfd    0000000b     (.cinit..far.load) [load image, compression = rle]
+                  0080cc08    00000008     (__TI_handler_table)
+                  0080cc10    00000010     (__TI_cinit_table)
+
+.init_array 
+*          0    00800000    00000000     UNINITIALIZED
+
+.fardata   0    0080c2c0    00000320     UNINITIALIZED
+                  0080c2c0    000001e0     rts6740_elf.lib : defs.c.obj (.fardata:_ftable)
+                  0080c4a0    000000a0                     : write.c.obj (.fardata:_stream)
+                  0080c540    00000078                     : write.c.obj (.fardata:_device)
+                  0080c5b8    0000000c                     : exit.c.obj (.fardata)
+                  0080c5c4    00000008                     : memory.c.obj (.fardata)
+                  0080c5cc    00000004                     : _lock.c.obj (.fardata:_lock)
+                  0080c5d0    00000004                     : _lock.c.obj (.fardata:_unlock)
+                  0080c5d4    00000004                     : defs.c.obj (.fardata)
+                  0080c5d8    00000004                     : dtor_list.c.obj (.fardata)
+                  0080c5dc    00000004                     : errno.c.obj (.fardata)
+
+MODULE SUMMARY
+
+       Module                       code    ro data   rw data
+       ------                       ----    -------   -------
+    .\
+       hello.obj                    224     152       0      
+    +--+----------------------------+-------+---------+---------+
+       Total:                       224     152       0      
+                                                             
+    C:\ti\ccs901\ccs\tools\compiler\ti-cgt-c6000_8.3.2\lib\rts6740_elf.lib
+       _printfi.c.obj               13536   92        0      
+       _scanfi.c.obj                8864    121       0      
+       strtod.c.obj                 2336    200       0      
+       memory.c.obj                 1760    0         8      
+       divd.c.obj                   1504    0         0      
+       strtoll.c.obj                1216    0         0      
+       strtoull.c.obj               1088    0         0      
+       strtol.c.obj                 928     0         0      
+       fputs.c.obj                  864     4         0      
+       defs.c.obj                   0       0         804    
+       imath64.c.obj                800     0         0      
+       strtoul.c.obj                768     0         0      
+       fscanf.c.obj                 672     0         0      
+       trgmsg.c.obj                 224     0         288    
+       dtor_list.c.obj              448     0         4      
+       fputc.c.obj                  448     0         0      
+       frexp.c.obj                  448     0         0      
+       getdevice.c.obj              448     0         0      
+       imath40.c.obj                448     0         0      
+       s_scalbn.c.obj               448     0         0      
+       setvbuf.c.obj                448     0         0      
+       hostrename.c.obj             416     0         0      
+       _io_perm.c.obj               384     0         0      
+       write.c.obj                  96      0         280    
+       _bufread.c.obj               352     0         0      
+       copy_decompress_rle.c.obj    288     0         0      
+       fgetc.c.obj                  288     0         0      
+       printf.c.obj                 288     0         0      
+       exit.c.obj                   256     0         12     
+       ctype.c.obj                  0       257       0      
+       atoi.c.obj                   256     0         0      
+       fclose.c.obj                 256     0         0      
+       fseek.c.obj                  256     0         0      
+       ungetc.c.obj                 256     0         0      
+       hostopen.c.obj               224     0         8      
+       close.c.obj                  224     0         0      
+       hostlseek.c.obj              224     0         0      
+       hostwrite.c.obj              224     0         0      
+       llshift.c.obj                224     0         0      
+       ltoa.c.obj                   224     0         0      
+       memset.c.obj                 224     0         0      
+       autoinit.c.obj               192     0         0      
+       divu.asm.obj                 192     0         0      
+       fflush.c.obj                 192     0         0      
+       hostread.c.obj               192     0         0      
+       hostunlink.c.obj             192     0         0      
+       tls.c.obj                    192     0         0      
+       fopen.c.obj                  160     0         0      
+       hostclose.c.obj              160     0         0      
+       memcpy64.asm.obj             160     0         0      
+       remu.asm.obj                 160     0         0      
+       boot.c.obj                   128     0         0      
+       unlink.c.obj                 128     0         0      
+       lseek.c.obj                  96      0         0      
+       memccpy.c.obj                96      0         0      
+       read.c.obj                   96      0         0      
+       args_main.c.obj              64      0         0      
+       frcmpyd_div.c.obj            64      0         0      
+       isinf.c.obj                  64      0         0      
+       push.asm.obj                 64      0         0      
+       wcslen.c.obj                 64      0         0      
+       _lock.c.obj                  32      0         8      
+       errno.c.obj                  32      0         4      
+       copy_decompress_none.c.obj   32      0         0      
+       pre_init.c.obj               32      0         0      
+       s_copysign.c.obj             32      0         0      
+       signbit.c.obj                32      0         0      
+       startup.c.obj                32      0         0      
+    +--+----------------------------+-------+---------+---------+
+       Total:                       45536   674       1416   
+                                                             
+       Heap:                        0       0         2048   
+       Stack:                       0       0         2048   
+       Linker Generated:            0       144       0      
+    +--+----------------------------+-------+---------+---------+
+       Grand Total:                 45760   970       5512   
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 0080cc10 records: 2, size/record: 8, table size: 16
+	.fardata: load addr=0080cb90, load size=0000006d bytes, run addr=0080c2c0, run size=00000320 bytes, compression=rle
+	.far: load addr=0080cbfd, load size=0000000b bytes, run addr=0080c890, run size=00000148 bytes, compression=rle
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 0080cc08 records: 2, size/record: 4, table size: 8
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                                                 
+-------   ----                                                 
+0080b220  C$$EXIT                                              
+0080ac18  C$$IO$$                                              
+0080a4c0  HOSTclose                                            
+00809460  HOSTlseek                                            
+00809540  HOSTopen                                             
+00809e00  HOSTread                                             
+00808400  HOSTrename                                           
+00809ec0  HOSTunlink                                           
+00809620  HOSTwrite                                            
+00809f80  _Z23__finalize_destructionsPP20a_needed_destructionPv
+0080c9d8  __CIOBUF_                                            
+0080cc10  __TI_CINIT_Base                                      
+0080cc20  __TI_CINIT_Limit                                     
+0080cc08  __TI_Handler_Table_Base                              
+0080cc10  __TI_Handler_Table_Limit                             
+0080bac0  __TI_STACK_END                                       
+00000800  __TI_STACK_SIZE                                      
+00000000  __TI_STATIC_BASE                                     
+00000800  __TI_SYSMEM_SIZE                                     
+UNDEFED   __TI_TLS_INIT_Base                                   
+UNDEFED   __TI_TLS_INIT_Limit                                  
+0080a100  __TI_auto_init_nobinit_nopinit                       
+00808720  __TI_buff_read                                       
+0080a560  __TI_cleanup                                         
+0080c5b8  __TI_cleanup_ptr                                     
+00808e60  __TI_closefile                                       
+0080b280  __TI_decompress_none                                 
+0080b2a0  __TI_decompress_rle24                                
+0080a1c0  __TI_doflush                                         
+0080c5bc  __TI_dtors_ptr                                       
+0080c5c0  __TI_enable_exit_profile_output                      
+0080af20  __TI_frcmpyd_div                                     
+0080c5d4  __TI_ft_end                                          
+ffffffff  __TI_pprof_out_hndl                                  
+00800000  __TI_printfi                                         
+ffffffff  __TI_prof_data_size                                  
+ffffffff  __TI_prof_data_start                                 
+0080a600  __TI_rd_ok                                           
+0080a9c0  __TI_readmsg                                         
+00802040  __TI_scanfi                                          
+0080a400  __TI_tls_init                                        
+0080c890  __TI_tmpnams                                         
+0080abc0  __TI_writemsg                                        
+00809700  __TI_wrt_ok                                          
+ffffffff  __binit__                                            
+00804f80  __c6xabi_divd                                        
+0080a280  __c6xabi_divu                                        
+00807980  __c6xabi_divul                                       
+00807520  __c6xabi_divull                                      
+0080b0a0  __c6xabi_errno_addr                                  
+0080af60  __c6xabi_isinf                                       
+0080aa40  __c6xabi_llshl                                       
+0080ac20  __c6xabi_llshru                                      
+0080b0e0  __c6xabi_pop_rts                                     
+0080b100  __c6xabi_push_rts                                    
+0080a6a0  __c6xabi_remu                                        
+0080ac80  __c6xabi_remull                                      
+ffffffff  __c_args__                                           
+0080a040  __cxa_atexit                                         
+0080b0c0  __cxa_ia64_exit                                      
+0080a280  __divu                                               
+0080c5dc  __errno                                              
+0080b0e0  __pop_rts                                            
+0080b100  __push_rts                                           
+0080a6a0  __remu                                               
+0080afe0  _args_main                                           
+0080aac0  _c_int00                                             
+0080c5e0  _ctypes_                                             
+0080c540  _device                                              
+0080c2c0  _ftable                                              
+0080c5cc  _lock                                                
+0080b140  _nop                                                 
+0080b1a0  _signbit                                             
+0080b2c0  _stack                                               
+0080c4a0  _stream                                              
+0080ace0  _subcull                                             
+0080bac0  _sys_memory                                          
+0080b1c0  _system_post_cinit                                   
+0080b1e0  _system_pre_init                                     
+0080c5d0  _unlock                                              
+0080b220  abort                                                
+0080b240  atexit                                               
+00809160  atoi                                                 
+ffffffff  binit                                                
+008097e0  close                                                
+0080b260  copysign                                             
+0080b260  copysignl                                            
+0080c5dc  errno                                                
+008098c0  exit                                                 
+008099a0  exit_handler                                         
+00808c20  fgetc                                                
+0080a7e0  finddevice                                           
+00807b40  fputc                                                
+008069c0  fputs                                                
+00806260  free                                                 
+00807d00  frexp                                                
+00807d00  frexpl                                               
+00809260  fseek                                                
+00808c20  getc                                                 
+00808d40  getdevice                                            
+00808080  ldexp                                                
+00808080  ldexpl                                               
+0080ad40  lseek                                                
+00809a80  ltoa                                                 
+008099b4  main                                                 
+00807ec0  malloc                                               
+0080ada0  memccpy                                              
+0080a880  memcpy                                               
+00809b60  memset                                               
+0080c9d0  parmbuf                                              
+00809c40  printf                                               
+00807b40  putc                                                 
+0080b020  puts                                                 
+0080ae00  read                                                 
+0080ab40  remove                                               
+00808080  scalbn                                               
+00808080  scalbnl                                              
+00809d20  scanf                                                
+00808240  setvbuf                                              
+00804000  strtod                                               
+00806620  strtol                                               
+00804000  strtold                                              
+00805560  strtoll                                              
+00806ce0  strtoul                                              
+00805a20  strtoull                                             
+00809360  ungetc                                               
+0080ab40  unlink                                               
+0080b060  wcslen                                               
+0080aec0  write                                                
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                                                 
+-------   ----                                                 
+00000000  __TI_STATIC_BASE                                     
+00000800  __TI_STACK_SIZE                                      
+00000800  __TI_SYSMEM_SIZE                                     
+00800000  __TI_printfi                                         
+00802040  __TI_scanfi                                          
+00804000  strtod                                               
+00804000  strtold                                              
+00804f80  __c6xabi_divd                                        
+00805560  strtoll                                              
+00805a20  strtoull                                             
+00806260  free                                                 
+00806620  strtol                                               
+008069c0  fputs                                                
+00806ce0  strtoul                                              
+00807520  __c6xabi_divull                                      
+00807980  __c6xabi_divul                                       
+00807b40  fputc                                                
+00807b40  putc                                                 
+00807d00  frexp                                                
+00807d00  frexpl                                               
+00807ec0  malloc                                               
+00808080  ldexp                                                
+00808080  ldexpl                                               
+00808080  scalbn                                               
+00808080  scalbnl                                              
+00808240  setvbuf                                              
+00808400  HOSTrename                                           
+00808720  __TI_buff_read                                       
+00808c20  fgetc                                                
+00808c20  getc                                                 
+00808d40  getdevice                                            
+00808e60  __TI_closefile                                       
+00809160  atoi                                                 
+00809260  fseek                                                
+00809360  ungetc                                               
+00809460  HOSTlseek                                            
+00809540  HOSTopen                                             
+00809620  HOSTwrite                                            
+00809700  __TI_wrt_ok                                          
+008097e0  close                                                
+008098c0  exit                                                 
+008099a0  exit_handler                                         
+008099b4  main                                                 
+00809a80  ltoa                                                 
+00809b60  memset                                               
+00809c40  printf                                               
+00809d20  scanf                                                
+00809e00  HOSTread                                             
+00809ec0  HOSTunlink                                           
+00809f80  _Z23__finalize_destructionsPP20a_needed_destructionPv
+0080a040  __cxa_atexit                                         
+0080a100  __TI_auto_init_nobinit_nopinit                       
+0080a1c0  __TI_doflush                                         
+0080a280  __c6xabi_divu                                        
+0080a280  __divu                                               
+0080a400  __TI_tls_init                                        
+0080a4c0  HOSTclose                                            
+0080a560  __TI_cleanup                                         
+0080a600  __TI_rd_ok                                           
+0080a6a0  __c6xabi_remu                                        
+0080a6a0  __remu                                               
+0080a7e0  finddevice                                           
+0080a880  memcpy                                               
+0080a9c0  __TI_readmsg                                         
+0080aa40  __c6xabi_llshl                                       
+0080aac0  _c_int00                                             
+0080ab40  remove                                               
+0080ab40  unlink                                               
+0080abc0  __TI_writemsg                                        
+0080ac18  C$$IO$$                                              
+0080ac20  __c6xabi_llshru                                      
+0080ac80  __c6xabi_remull                                      
+0080ace0  _subcull                                             
+0080ad40  lseek                                                
+0080ada0  memccpy                                              
+0080ae00  read                                                 
+0080aec0  write                                                
+0080af20  __TI_frcmpyd_div                                     
+0080af60  __c6xabi_isinf                                       
+0080afe0  _args_main                                           
+0080b020  puts                                                 
+0080b060  wcslen                                               
+0080b0a0  __c6xabi_errno_addr                                  
+0080b0c0  __cxa_ia64_exit                                      
+0080b0e0  __c6xabi_pop_rts                                     
+0080b0e0  __pop_rts                                            
+0080b100  __c6xabi_push_rts                                    
+0080b100  __push_rts                                           
+0080b140  _nop                                                 
+0080b1a0  _signbit                                             
+0080b1c0  _system_post_cinit                                   
+0080b1e0  _system_pre_init                                     
+0080b220  C$$EXIT                                              
+0080b220  abort                                                
+0080b240  atexit                                               
+0080b260  copysign                                             
+0080b260  copysignl                                            
+0080b280  __TI_decompress_none                                 
+0080b2a0  __TI_decompress_rle24                                
+0080b2c0  _stack                                               
+0080bac0  __TI_STACK_END                                       
+0080bac0  _sys_memory                                          
+0080c2c0  _ftable                                              
+0080c4a0  _stream                                              
+0080c540  _device                                              
+0080c5b8  __TI_cleanup_ptr                                     
+0080c5bc  __TI_dtors_ptr                                       
+0080c5c0  __TI_enable_exit_profile_output                      
+0080c5cc  _lock                                                
+0080c5d0  _unlock                                              
+0080c5d4  __TI_ft_end                                          
+0080c5dc  __errno                                              
+0080c5dc  errno                                                
+0080c5e0  _ctypes_                                             
+0080c890  __TI_tmpnams                                         
+0080c9d0  parmbuf                                              
+0080c9d8  __CIOBUF_                                            
+0080cc08  __TI_Handler_Table_Base                              
+0080cc10  __TI_CINIT_Base                                      
+0080cc10  __TI_Handler_Table_Limit                             
+0080cc20  __TI_CINIT_Limit                                     
+ffffffff  __TI_pprof_out_hndl                                  
+ffffffff  __TI_prof_data_size                                  
+ffffffff  __TI_prof_data_start                                 
+ffffffff  __binit__                                            
+ffffffff  __c_args__                                           
+ffffffff  binit                                                
+UNDEFED   __TI_TLS_INIT_Base                                   
+UNDEFED   __TI_TLS_INIT_Limit                                  
+
+[129 symbols]
