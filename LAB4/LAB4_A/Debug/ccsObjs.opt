@@ -1,0 +1,1 @@
+"./GPIO.obj" "./HWI.obj" "./Init.obj" "./LED_DIPSW.obj" "./Timer.obj" "./main.obj" "./sine.obj" -l"configPkg/linker.cmd" -llibc.a 
