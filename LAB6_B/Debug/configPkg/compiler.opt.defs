@@ -1,0 +1,1 @@
+-I"C:/ti/bios_6_76_02_02/packages" -I"C:/ti/ccs901/xdctools_3_55_00_11_core/packages" -I"D:/workspace_v9/LAB6B/Debug/configPkg/.." -IC:/ti/ccs901/ccs/tools/compiler/ti-cgt-c6000_8.3.2/include -Dxdc_target_types__="ti/targets/elf/std.h" -Dxdc_target_name__=C674 -Dxdc_cfg__xheader__="\"D:/workspace_v9/LAB6B/Debug/configPkg/package/cfg/app_pe674.h\""
