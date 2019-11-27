@@ -1,0 +1,1 @@
+"./HWI.obj" "./SWI.obj" "./main.obj" "./lib/Codec.obj" "./lib/EDMA_McASP.obj" "./lib/GPIO.obj" "./lib/I2C.obj" "./lib/Init.obj" "./lib/LED_DIPSW.obj" "./lib/McASP.obj" "./lib/sine.obj" -l"configPkg/linker.cmd" -llibc.a 
