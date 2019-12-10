@@ -215,6 +215,7 @@ main.obj: C:/Users/olleh/workspace_v9/exam2/lib/Codec.h
 main.obj: C:/Users/olleh/workspace_v9/exam2/lib/McASP.h
 main.obj: C:/Users/olleh/workspace_v9/exam2/lib/sine.h
 main.obj: C:/Users/olleh/workspace_v9/exam2/lib/EDMA_McASP.h
+main.obj: ../Timer.h
 
 ../main.c: 
 C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/std.h: 
@@ -431,3 +432,4 @@ C:/Users/olleh/workspace_v9/exam2/lib/Codec.h:
 C:/Users/olleh/workspace_v9/exam2/lib/McASP.h: 
 C:/Users/olleh/workspace_v9/exam2/lib/sine.h: 
 C:/Users/olleh/workspace_v9/exam2/lib/EDMA_McASP.h: 
+../Timer.h: 

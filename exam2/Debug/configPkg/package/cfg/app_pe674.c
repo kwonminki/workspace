@@ -1609,7 +1609,7 @@ typedef struct xdc_runtime_Text_Module_State__ {
 xdc_runtime_Text_Module_State__ xdc_runtime_Text_Module__state__V;
 
 /* --> xdc_runtime_Text_charTab__A */
-const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6479];
+const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6481];
 
 /* --> xdc_runtime_Text_nodeTab__A */
 const __T1_xdc_runtime_Text_nodeTab xdc_runtime_Text_nodeTab__A[51];
@@ -7589,7 +7589,7 @@ xdc_runtime_Text_Module_State__ xdc_runtime_Text_Module__state__V = {
 
 /* --> xdc_runtime_Text_charTab__A */
 #pragma DATA_SECTION(xdc_runtime_Text_charTab__A, ".const:xdc_runtime_Text_charTab__A");
-const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6479] = {
+const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6481] = {
     (xdc_Char)0x0,  /* [0] */
     (xdc_Char)0x41,  /* [1] */
     (xdc_Char)0x5f,  /* [2] */
@@ -14064,11 +14064,13 @@ const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6479] = {
     (xdc_Char)0x54,  /* [6471] */
     (xdc_Char)0x35,  /* [6472] */
     (xdc_Char)0x0,  /* [6473] */
-    (xdc_Char)0x68,  /* [6474] */
-    (xdc_Char)0x77,  /* [6475] */
-    (xdc_Char)0x69,  /* [6476] */
-    (xdc_Char)0x31,  /* [6477] */
-    (xdc_Char)0x0,  /* [6478] */
+    (xdc_Char)0x54,  /* [6474] */
+    (xdc_Char)0x69,  /* [6475] */
+    (xdc_Char)0x6d,  /* [6476] */
+    (xdc_Char)0x65,  /* [6477] */
+    (xdc_Char)0x72,  /* [6478] */
+    (xdc_Char)0x31,  /* [6479] */
+    (xdc_Char)0x0,  /* [6480] */
 };
 
 /* --> xdc_runtime_Text_nodeTab__A */
@@ -14374,7 +14376,7 @@ __FAR__ const CT__xdc_runtime_Text_nodeTab xdc_runtime_Text_nodeTab__C = ((CT__x
 
 /* charCnt__C */
 #pragma DATA_SECTION(xdc_runtime_Text_charCnt__C, ".const:xdc_runtime_Text_charCnt__C");
-__FAR__ const CT__xdc_runtime_Text_charCnt xdc_runtime_Text_charCnt__C = (xdc_Int16)0x194f;
+__FAR__ const CT__xdc_runtime_Text_charCnt xdc_runtime_Text_charCnt__C = (xdc_Int16)0x1951;
 
 /* nodeCnt__C */
 #pragma DATA_SECTION(xdc_runtime_Text_nodeCnt__C, ".const:xdc_runtime_Text_nodeCnt__C");
@@ -19935,5 +19937,5 @@ const ti_sysbios_knl_Queue_Handle RT_Que = (ti_sysbios_knl_Queue_Handle)((ti_sys
 #endif
 #endif
 #endif
-const ti_sysbios_hal_Hwi_Handle hwi1 = (ti_sysbios_hal_Hwi_Handle)((ti_sysbios_hal_Hwi_Handle)&ti_sysbios_hal_Hwi_Object__table__V[1]);
+const ti_sysbios_hal_Hwi_Handle Timer1 = (ti_sysbios_hal_Hwi_Handle)((ti_sysbios_hal_Hwi_Handle)&ti_sysbios_hal_Hwi_Object__table__V[1]);
 

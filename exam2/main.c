@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include "init.h"
 #include "define.h"
+#include "Timer.h"
 
 // LAB7C 는 이전 핑퐁버퍼 그냥 구조체로 바꿔서 코드 편하게 만든것 뿐임
 
@@ -77,6 +78,6 @@ void main()
 
     InitMcASP( RECEIVE, CFG );
     InitMcASP( TRANSMIT, CFG );
-
+    StartTimer();
     BIOS_start();
 }
