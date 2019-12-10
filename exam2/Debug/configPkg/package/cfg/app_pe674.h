@@ -19,8 +19,8 @@ extern const ti_sysbios_knl_Swi_Handle swi0;
 #include <ti/sysbios/knl/Queue.h>
 extern const ti_sysbios_knl_Queue_Handle RT_Que;
 
-#include <ti/sysbios/knl/Clock.h>
-extern const ti_sysbios_knl_Clock_Handle clock0;
+#include <ti/sysbios/hal/Hwi.h>
+extern const ti_sysbios_hal_Hwi_Handle hwi1;
 
 extern int xdc_runtime_Startup__EXECFXN__C;
 

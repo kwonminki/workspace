@@ -13,6 +13,7 @@ ORDERED_OBJS += \
 "./Filter.obj" \
 "./HWI.obj" \
 "./SWI.obj" \
+"./Timer.obj" \
 "./main.obj" \
 "./lib/Codec.obj" \
 "./lib/EDMA_McASP.obj" \
@@ -167,8 +168,8 @@ exam2.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "Filter.obj" "HWI.obj" "SWI.obj" "main.obj" "lib\Codec.obj" "lib\EDMA_McASP.obj" "lib\GPIO.obj" "lib\I2C.obj" "lib\Init.obj" "lib\LED_DIPSW.obj" "lib\McASP.obj" "lib\sine.obj" 
-	-$(RM) "Filter.d" "HWI.d" "SWI.d" "main.d" "lib\Codec.d" "lib\EDMA_McASP.d" "lib\GPIO.d" "lib\I2C.d" "lib\Init.d" "lib\LED_DIPSW.d" "lib\McASP.d" "lib\sine.d" 
+	-$(RM) "Filter.obj" "HWI.obj" "SWI.obj" "Timer.obj" "main.obj" "lib\Codec.obj" "lib\EDMA_McASP.obj" "lib\GPIO.obj" "lib\I2C.obj" "lib\Init.obj" "lib\LED_DIPSW.obj" "lib\McASP.obj" "lib\sine.obj" 
+	-$(RM) "Filter.d" "HWI.d" "SWI.d" "Timer.d" "main.d" "lib\Codec.d" "lib\EDMA_McASP.d" "lib\GPIO.d" "lib\I2C.d" "lib\Init.d" "lib\LED_DIPSW.d" "lib\McASP.d" "lib\sine.d" 
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
 	-@echo 'Finished clean'
 	-@echo ' '

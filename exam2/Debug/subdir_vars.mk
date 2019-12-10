@@ -12,6 +12,7 @@ C_SRCS += \
 ../Filter.c \
 ../HWI.c \
 ../SWI.c \
+../Timer.c \
 ../main.c 
 
 GEN_CMDS += \
@@ -28,6 +29,7 @@ C_DEPS += \
 ./Filter.d \
 ./HWI.d \
 ./SWI.d \
+./Timer.d \
 ./main.d 
 
 GEN_OPTS += \
@@ -37,6 +39,7 @@ OBJS += \
 ./Filter.obj \
 ./HWI.obj \
 ./SWI.obj \
+./Timer.obj \
 ./main.obj 
 
 GEN_MISC_DIRS__QUOTED += \
@@ -46,12 +49,14 @@ OBJS__QUOTED += \
 "Filter.obj" \
 "HWI.obj" \
 "SWI.obj" \
+"Timer.obj" \
 "main.obj" 
 
 C_DEPS__QUOTED += \
 "Filter.d" \
 "HWI.d" \
 "SWI.d" \
+"Timer.d" \
 "main.d" 
 
 GEN_FILES__QUOTED += \
@@ -62,6 +67,7 @@ C_SRCS__QUOTED += \
 "../Filter.c" \
 "../HWI.c" \
 "../SWI.c" \
+"../Timer.c" \
 "../main.c" 
 
 

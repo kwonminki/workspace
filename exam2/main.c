@@ -68,7 +68,7 @@ void main()
 
     CodecInit( SAMPLING_FREQ, WORD_LEN_16BIT, LINE_IN );
     ConfigMcASP( MCASP_16BIT, MCASP_2SLOT, CFG, NO_RINT, NO_XINT ); //¿©±â!
-
+    ConfigTimer_32bit( 1000 );
 
     SetupEDMA3( que );
 

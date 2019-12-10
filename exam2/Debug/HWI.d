@@ -181,25 +181,7 @@ HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h
 HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h
 HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h
 HWI.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Queue.h
-HWI.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Clock.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Assert.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Diags.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Log.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h
-HWI.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/interfaces/ITimer.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h
-HWI.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Queue.h
-HWI.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Swi.h
-HWI.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h
-HWI.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h
-HWI.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/interfaces/ITimer.h
-HWI.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
+HWI.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/hal/Hwi.h
 HWI.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Swi.h
 HWI.obj: ../define.h
 HWI.obj: C:/Users/olleh/workspace_v9/exam2/lib/LED_DIPSW.h
@@ -412,25 +394,7 @@ C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h:
 C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h: 
 C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h: 
 C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Queue.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Clock.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Assert.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Diags.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Log.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/interfaces/ITimer.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Queue.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Swi.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/interfaces/ITimer.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
+C:/ti/bios_6_76_02_02/packages/ti/sysbios/hal/Hwi.h: 
 C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Swi.h: 
 ../define.h: 
 C:/Users/olleh/workspace_v9/exam2/lib/LED_DIPSW.h: 

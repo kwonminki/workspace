@@ -102,7 +102,7 @@ void InitQue( QueObj *que ){
     }
 }
 
-void Increasing(void){
+void ProcessTimer(void){
     numX += 20.f;
     if (numX > 400.f){
         numX = 200.f;

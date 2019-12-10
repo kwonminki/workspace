@@ -181,25 +181,7 @@ main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h
 main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h
 main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h
 main.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Queue.h
-main.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Clock.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Assert.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Diags.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Log.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h
-main.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/interfaces/ITimer.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h
-main.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Queue.h
-main.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Swi.h
-main.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h
-main.obj: C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h
-main.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/interfaces/ITimer.h
-main.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
+main.obj: C:/ti/bios_6_76_02_02/packages/ti/sysbios/hal/Hwi.h
 main.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c6000_8.3.2/include/stdio.h
 main.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c6000_8.3.2/include/_ti_config.h
 main.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c6000_8.3.2/include/linkage.h
@@ -415,25 +397,7 @@ C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h:
 C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h: 
 C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h: 
 C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Queue.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Clock.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Assert.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Diags.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Log.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/interfaces/ITimer.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Queue.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/Swi.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h: 
-C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/interfaces/ITimer.h: 
-C:/ti/bios_6_76_02_02/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
+C:/ti/bios_6_76_02_02/packages/ti/sysbios/hal/Hwi.h: 
 C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c6000_8.3.2/include/stdio.h: 
 C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c6000_8.3.2/include/_ti_config.h: 
 C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c6000_8.3.2/include/linkage.h: 
